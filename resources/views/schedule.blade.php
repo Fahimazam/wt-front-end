@@ -268,7 +268,7 @@
  </head>
  <body> 
 	<div class="bg">
-	<img src="fahim.jpg" class="imagec1">
+	<img src="/static/img/fahim.jpg" class="imagec1">
 	<div class="user">
 		<h1>Gaurd Schedule</h1>
 	</div>
@@ -366,7 +366,7 @@
 	
 	
     <div class="parent">
-	  <img src="fahim.jpg" class="imagec">
+	  <img src="/static/img/fahim.jpg" class="imagec">
 	  <p class="name">Burt Macklin</p>
 	  <p class="id"> ID:1000121 </p>
 	  <ul class="list">
