@@ -1,6 +1,6 @@
 <html>
  <head>
-   <title>Profile Page</title>
+   <title>Schedule Page</title>
    <style>
 	
     body{
@@ -17,14 +17,14 @@
     top: 145px;
     left: 465px;
     width: 500px;
-	border: #EC2028;
+	border:#2B6038;
 	border-width: 1px;
 
 	
 		}
         .search input[type=text] {
          border: none;
-        background: #f1f1f1;
+        background: #eeeeee;
         padding: 10px;
         width: 50%;
 		border: black;
@@ -37,13 +37,14 @@
 			font-size: 30px;
 			font-family: sans-serif;
 			text-align: center;
-			background: #96a0a3;
+			background: #eeeeee;
             color: black(133, 12, 12);
             padding: 2rem ;
-			border-radius: 30px;
+			border-radius: 20px;
 		}
 		.btn2 {
-    background: #093545;
+    background: #2B6038;
+	text-decoration: none;
     color: white;
     padding: 5px 10px;
     text-align:center;;
@@ -70,31 +71,33 @@
 	 ul.list li{
 	   text-decoration: none;
 	   display: block;
-	   background-color: black;
+	   background-color: #2B6038;
 	   width: 208px;
 	   text-align: center;
-	   border-color: blue;
+	   border-color: rgb(255, 255, 255);
 	   border-style: solid;
 	   border-width: 1px;
 	   height:60px;
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
 	 }
 	 ul.list li a{
 	   color: white;
 	   text-align: center;
 	   text-decoration: none;
-	   padding: 50px;
-	   margin: auto;
-	   
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   width: 100%;  
+	   height: 100%;
 	 }
 	 ul.list li a:hover{
-	   color: white;
-	   background-color: silver;
-	   border: 1px solid blue;
-	  
+	   color: #2B6038;  
 	 }
 	 ul.list li:hover {
-	   color: white;
-	   background-color: green;
+	   color: #2B6038;
+	   background-color: rgb(0, 0, 0);
 	 }
 	 .imagec{
 		border-radius: 100px;
@@ -120,7 +123,7 @@
 	 }
 	 .parent{
 		width: 210px;
-        background-color: green;
+        background-color: #4FBA6A;
         display: block;
         height: 100%;
         margin-top: 0px;
@@ -154,7 +157,7 @@
 	   height: 20px;
 	 }
 	 .nav{
-	     background-color: rgb(66, 15, 15);
+	     background-color: #2B6038;
 		 height: 35px;
 		 font-size: 25px;
 	     font-weight: bold;
@@ -168,12 +171,12 @@
 		 max-width: 250px;
 	   }
 	   .nav2{    position: absolute;
-    background: #424242;
+    background: #d8d3d3;
     height: 700px;
     width: 1040px;
     top: 100px;
     left: 275px;	
-	border-radius: 20px;
+	border-radius: 10px;
 	   }
 	   
 	   
@@ -194,9 +197,8 @@
 	    ul.cbs li a{
 	     text-decoration: none;
 		 padding: 10px 10px 10px 10px;
-		 color: black;
+		 color: rgb(0, 0, 0);
 		 vertical-align: middle;
-		 text-decoration: underline;
 		 margin-top: 20px;
 		
 	    }
@@ -232,8 +234,8 @@
 		.user1{
 			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			position: absolute;
-			top:15px;
-			left: 1150px;
+			top:8px;
+			left: 1130px;
 			font-size: small;
 		}
 		.user2{
@@ -253,18 +255,21 @@
 		}
 
 		.bg{
-			background:rgb(107, 107, 107)
+			background:rgb(255, 255, 255)
 			
 
 		}
-		
-		
-		
 
-
-
-		
-	  </style>
+		#srch{
+			width: 80px;
+			background-color: #2B6038;
+			color: white;
+			border: #3d3c3c;
+			border-radius: 5px;
+			margin-left: 10px;
+		}		
+	</style>
+	
  </head>
  <body> 
 	<div class="bg">
@@ -283,107 +288,92 @@
 			<div class="user3">
 				<h3>Today's Schedule</h3>
 			</div>
-		<div class="user2">
-			<h3>Database</h3>
-		</div>
 		<div class="search">
 			<input type="text" placeholder="Search..">
-			<button type="submit"><i class="material-icons">search</i></button>
+			<button type="submit" id="srch">search</button>
 		</div>
 		<table class="tb1">
 			<tr bgcolor="#e2dede">
-				<td bgcolor="#A52A2A">ID</td>
-				<td bgcolor="#A52A2A">Name</td>
-				<td bgcolor="#A52A2A">Location</td>
-				<td bgcolor="#A52A2A">Time</td>
-				<td bgcolor="#A52A2A">Up Coming Schedule</td>
+				<td bgcolor="#4FBA6A">ID</td>
+				<td bgcolor="#4FBA6A">Name</td>
+				<td bgcolor="#4FBA6A">Location</td>
+				<td bgcolor="#4FBA6A">Time</td>
+				<td bgcolor="#4FBA6A">Up Coming Schedule</td>
 			</tr>
 			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">11232</td>
+				<td bgcolor="#CDCED2">11232</td>
 				<td>Abbas Ali</td>
 				<td>Plaza</td>
 				<td>8.00-2.00</td>
 				<td><a href="#" class="btn2">View</a></td>
 			</tr>
 			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">11233</td>
+				<td bgcolor="#CDCED2">11233</td>
 				<td>Rashid Khan</td>
 				<td>Annex</td>
 				<td>8.00-2.00</td>
 				<td><a href="#" class="btn2">View</a></td>
 			</tr>
 			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">11234</td>
+				<td bgcolor="#CDCED2">11234</td>
 				<td>Akkas Ali</td>
 				<td>FBS</td>
 				<td>12.00-6.00</td>
 				<td><a href="#" class="btn2">View</a></td>
 			</tr>
 			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">11235</td>
+				<td bgcolor="#CDCED2">11235</td>
 				<td>Mominul Haque</td>
 				<td>Vista</td>
 				<td>12.00-6.00</td>
 				<td><a href="#" class="btn2">View</a></td>
 			</tr>
 			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">11237</td>
+				<td bgcolor="#CDCED2">11237</td>
 				<td>Rajjak Sheikh</td>
 				<td>Vista</td>
 				<td>7.00-1.00</td>
 				<td><a href="#" class="btn2">View</a></td>
 			</tr>
 			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">1237</td>
+				<td bgcolor="#CDCED2">1237</td>
 				<td>Enamul Hauque</td>
 				<td>Gate-1</td>
 				<td>7.00-1.00</td>
 				<td><a href="#" class="btn2">View</a></td>
 			</tr>
 			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">11237</td>
+				<td bgcolor="#CDCED2">11237</td>
 				<td>Rajjak Sheikh</td>
 				<td>Anex</td>
 				<td>2.00-6.00</td>
 				<td><a href="#" class="btn2">View</a></td>
 			</tr>
-			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">1239</td>
-				<td>Md. Hamim</td>
-				<td>Plaza</td>
-				<td>7.00-1.00</td>
-				<td><a href="#" class="btn2">View</a></td>
-			</tr>
-			<tr bgcolor="#e2dede">
-				<td bgcolor="#8ACA91">1240</td>
-				<td>Habibur Basar</td>
-				<td>FBS</td>
-				<td>8.00-12.00</td>
-				<td><a href="#" class="btn2">View</a></td>
-			</tr>
+			
 		</table>
 	
 	
 	
     <div class="parent">
 	  <img src="/static/img/fahim.jpg" class="imagec">
-	  <p class="name">Burt Macklin</p>
+	  <p class="name">Fahim Amin</p>
 	  <p class="id"> ID:1000121 </p>
 	  <ul class="list">
-	    <li><a href="#">HOME</a></li>
-		<li><a href="#">SCHEDULE</a></li>
-		<li><a href="#">NOTICE</a></li>
-		<li><a href="#">SCANNER</a></li>
+	    <li><a href="/">HOME</a></li>
+	    <li><a href="/">DASHBOARD</a></li>
+		<li><a href="schedule">SCHEDULE</a></li>
+		<li><a href="profile">PROFILE</a></li>
+		<li><a href="Scanner">SCANNER</a></li>
 		<li><a href="#">SETTINGS</a></li>
 	  </ul>
 	</div>
 	<div id="nav">
 	  <ul class="cbs">
-	   <li><a href="#">HOME</a></li>
-	   <li><a href="#">Profile</a></li>
-	   <li><a href="#">Schedule</a></li>
+	   <li><a href="dashboard">HOME</a></li>
+	   <li><a href="profile">Profile</a></li>
+	   <li><a href="schedule">Schedule</a></li>
 	   <li><a href="#">Notices</a></li>
-	   <li><a href="#">Scanner</a></li>
+	   <li><a href="Scanner">Scanner</a></li>
 	  </ul>
 	</div>   
 </div>	                                     
